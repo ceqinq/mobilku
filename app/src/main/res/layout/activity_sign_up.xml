@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/icon"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:textColor="@color/redBlood"
+            />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="textEmailAddress"
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="16sp"
+            android:textColor="@color/redBlood"
+            />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="textPassword"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="16sp"
+            android:textColor="@color/redBlood"
+            />
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="textCapWords"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor HP"
+            android:textSize="16sp"
+            android:textColor="@color/redBlood"
+            />
+
+        <EditText
+            android:id="@+id/etNomorHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat Rumah"
+            android:textSize="16sp"
+            android:textColor="@color/redBlood"
+            />
+
+
+
+        <EditText
+            android:id="@+id/etAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="textCapWords"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Provinsi"
+                    android:textSize="16sp"
+                    android:textColor="@color/redBlood"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinnerProvinsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@android:drawable/editbox_background"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kab / Kota"
+                    android:textSize="16sp"
+                    android:textColor="@color/redBlood"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinnerKab"
+                    android:layout_width="match_parent"
+                    android:background="@android:drawable/editbox_background"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_height="40dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kelamin"
+                    android:textSize="16sp"
+                    android:textColor="@color/redBlood"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinnerGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@android:drawable/editbox_background"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Lahir"
+                    android:textSize="16sp"
+                    android:textColor="@color/redBlood"
+                    />
+
+                <EditText
+                    android:id="@+id/etTanggalLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/editbox_background"
+                    android:editable="false"
+                    android:focusable="false"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Golongan Darah"
+                    android:textSize="16sp"
+                    android:textColor="@color/redBlood"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinnerGoldar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@android:drawable/editbox_background"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rhesus"
+                    android:textSize="16sp"
+                    android:textColor="@color/redBlood"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinnerRhesus"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@android:drawable/editbox_background"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Daftar"
+            android:background="@color/redBlood"
+            android:elevation="2dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Donor">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <RelativeLayout
+            android:id="@+id/relay"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/redBlood"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SALDO DONOR DARAH"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvSaldo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:textSize="65sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <TextView
+                android:id="@+id/tx"
+                android:padding="5dp"
+                android:text="Catatan Donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/redBlood"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="#fff"/>
+
+            <TextView
+                android:layout_below="@id/tx"
+                android:id="@+id/ln"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/redBlood"/>
+
+            <Button
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btnDonor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Donor Sekarang!"
+                android:background="@color/redBlood"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:id="@+id/tvCooldown"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Cooldown"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:background="@color/redBlood"
+                android:textColor="@android:color/white"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/belumAda"
+                android:text="Belum ada Catatan Donor."
+                android:layout_marginTop="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ln"
+                android:visibility="invisible"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/ln"
+                android:layout_above="@id/btnDonor"
+                android:id="@+id/review"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:overScrollMode="never"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
